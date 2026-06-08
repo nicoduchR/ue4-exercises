@@ -10,9 +10,14 @@ Chaque séance possède son propre dossier (`seance-01`, `seance-02`, …) conte
 ue4-exercises/
 ├── README.md            ← ce fichier
 ├── .gitignore
-└── seance-01/
-    ├── README.md        ← doc de l'exercice de la séance
-    └── convertisseur_eur_usd.py
+├── seance-01/
+│   ├── README.md        ← doc de l'exercice de la séance
+│   └── convertisseur_eur_usd.py
+└── seance-02/
+    ├── README.md
+    ├── pair_ou_impair.py
+    ├── table_de_multiplication.py
+    └── somme_jusqu_a_n.py
 ```
 
 ## Prérequis
@@ -37,6 +42,7 @@ python seance-01/convertisseur_eur_usd.py
 | Séance | Thème | Exercice |
 |:------:|-------|----------|
 | 01 | Synthèse — variables, `input()`, f-strings | [Convertisseur € → $](seance-01/README.md) |
+| 02 | Conditions & boucles (`if`, `for`, `range`, `%`) | [Exercices guidés](seance-02/README.md) |
 
 ## Rendu des exercices
 
