@@ -13,17 +13,22 @@ ue4-exercises/
 ├── seance-01/
 │   ├── README.md        ← doc de l'exercice de la séance
 │   └── convertisseur_eur_usd.py
-└── seance-02/
+├── seance-02/
+│   ├── README.md
+│   ├── pair_ou_impair.py
+│   ├── table_de_multiplication.py
+│   └── somme_jusqu_a_n.py
+└── seance-03/
     ├── README.md
-    ├── pair_ou_impair.py
-    ├── table_de_multiplication.py
-    └── somme_jusqu_a_n.py
+    ├── calculatrice.py
+    └── test_calculatrice.py
 ```
 
 ## Prérequis
 
 - [Python 3.14.5](https://www.python.org/downloads/) (version utilisée pour ce dépôt).
-- Aucun package externe : uniquement la bibliothèque standard.
+- Aucun package externe pour exécuter les scripts.
+- `pytest` est nécessaire uniquement pour lancer les tests de la séance 03.
 - Une connexion internet est utile pour la séance 01 (taux de change en temps réel), mais un repli hors ligne est prévu.
 
 ## Lancer un exercice
@@ -43,6 +48,7 @@ python seance-01/convertisseur_eur_usd.py
 |:------:|-------|----------|
 | 01 | Synthèse — variables, `input()`, f-strings | [Convertisseur € → $](seance-01/README.md) |
 | 02 | Conditions & boucles (`if`, `for`, `range`, `%`) | [Exercices guidés](seance-02/README.md) |
+| 03 | Fonctions, robustesse & tests | [Calculatrice testée](seance-03/README.md) |
 
 ## Rendu des exercices
 
