@@ -18,10 +18,15 @@ ue4-exercises/
 │   ├── pair_ou_impair.py
 │   ├── table_de_multiplication.py
 │   └── somme_jusqu_a_n.py
-└── seance-03/
+├── seance-03/
+│   ├── README.md
+│   ├── calculatrice.py
+│   └── test_calculatrice.py
+└── seance-04/
     ├── README.md
-    ├── calculatrice.py
-    └── test_calculatrice.py
+    ├── historique_taux_eur_usd.py
+    ├── taux_eur_usd_30j.csv   ← généré
+    └── rapport.txt            ← généré
 ```
 
 ## Prérequis
@@ -49,6 +54,7 @@ python seance-01/convertisseur_eur_usd.py
 | 01 | Synthèse — variables, `input()`, f-strings | [Convertisseur € → $](seance-01/README.md) |
 | 02 | Conditions & boucles (`if`, `for`, `range`, `%`) | [Exercices guidés](seance-02/README.md) |
 | 03 | Fonctions, robustesse & tests | [Calculatrice testée](seance-03/README.md) |
+| 04 | Synthèse — API, fichiers CSV & gestion d'erreurs | [Historique du taux € → $](seance-04/README.md) |
 
 ## Rendu des exercices
 

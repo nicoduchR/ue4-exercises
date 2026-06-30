@@ -1,0 +1,10 @@
+Rapport — historique du taux EUR -> USD (30 derniers jours)
+==========================================================
+Source des donnees : Frankfurter / BCE
+Periode analysee   : du 2026-05-29 au 2026-06-29
+Nombre de releves  : 22 (jours ouvres)
+
+Taux moyen   : 1.1529 USD
+Taux minimum : 1.1340 USD  (le 2026-06-24)
+Taux maximum : 1.1649 USD  (le 2026-06-02)
+Amplitude    : 0.0309 USD
