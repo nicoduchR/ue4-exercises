@@ -1,0 +1,37 @@
+Commentaire - controle continu : analyse du taux EUR/USD
+============================================================
+Source des donnees : Frankfurter / BCE
+Periode analysee   : du 2024-07-05 au 2026-07-06 (732 jours calendaires)
+Jours combles      : 222 (week-ends et feries, remplis par propagation du dernier taux connu)
+
+1. Exploration
+   Rendement journalier moyen : +0.0080 %
+   Volatilite (ecart-type)    : 0.3758 %
+   Pire jour                  : -1.8537 %
+   Meilleur jour              : +2.7215 %
+   Le rendement moyen est proche de zero et la distribution est
+   centree : sur 2 ans, le taux evolue par petites variations
+   quotidiennes, sans derive journaliere marquee. Le pic de
+   rendements a exactement 0 % sur l'histogramme correspond aux
+   week-ends et jours feries combles par ffill : le taux n'y bouge
+   pas, par construction.
+
+2. Prevision (regression lineaire)
+   Modele : taux_demain = 0.9974 x taux_du_jour +0.0031
+   Entrainement / test : 585 / 146 jours (decoupage chronologique 80/20)
+   RMSE (regression)   : 0.00374 USD
+   RMSE (naif, demain = aujourd'hui) : 0.00373 USD
+   Dernier taux connu  : 1.1415 USD
+   Prevision pour demain : 1.1416 USD
+
+3. Interpretation
+   La pente est proche de 1 et l'ordonnee a l'origine proche de 0 :
+   la meilleure prediction lineaire du taux de demain est presque
+   le taux d'aujourd'hui. La regression ne fait pas mieux que le modele
+   naif "demain = aujourd'hui", ce qui est typique d'un taux de
+   change : il se comporte quasiment comme une marche aleatoire, et
+   l'information d'hier est deja contenue dans le prix du jour.
+   L'interet du modele n'est donc pas de "battre le marche" mais
+   de quantifier l'incertitude : l'erreur type est d'environ
+   0.0037 USD, soit l'ordre de grandeur du mouvement
+   qu'on peut attendre d'un jour a l'autre.

@@ -22,19 +22,26 @@ ue4-exercises/
 │   ├── README.md
 │   ├── calculatrice.py
 │   └── test_calculatrice.py
-└── seance-04/
+├── seance-04/
+│   ├── README.md
+│   ├── historique_taux_eur_usd.py
+│   ├── taux_eur_usd_30j.csv   ← généré
+│   └── rapport.txt            ← généré
+└── seance-05/
     ├── README.md
-    ├── historique_taux_eur_usd.py
-    ├── taux_eur_usd_30j.csv   ← généré
-    └── rapport.txt            ← généré
+    ├── taux_change_analysis.py
+    ├── eur_usd.csv            ← généré
+    ├── commentaire.txt        ← généré
+    └── graphiques/            ← générés (3 PNG)
 ```
 
 ## Prérequis
 
 - [Python 3.14.5](https://www.python.org/downloads/) (version utilisée pour ce dépôt).
-- Aucun package externe pour exécuter les scripts.
+- Aucun package externe pour les séances 01 à 04.
 - `pytest` est nécessaire uniquement pour lancer les tests de la séance 03.
-- Une connexion internet est utile pour la séance 01 (taux de change en temps réel), mais un repli hors ligne est prévu.
+- La séance 05 (contrôle continu) requiert `pandas`, `matplotlib` et `scikit-learn` : `pip install pandas matplotlib scikit-learn`.
+- Une connexion internet est utile pour les séances 01, 04 et 05 (taux de change en temps réel), mais un repli hors ligne est prévu.
 
 ## Lancer un exercice
 
@@ -55,6 +62,7 @@ python seance-01/convertisseur_eur_usd.py
 | 02 | Conditions & boucles (`if`, `for`, `range`, `%`) | [Exercices guidés](seance-02/README.md) |
 | 03 | Fonctions, robustesse & tests | [Calculatrice testée](seance-03/README.md) |
 | 04 | Synthèse — API, fichiers CSV & gestion d'erreurs | [Historique du taux € → $](seance-04/README.md) |
+| 05 | **Contrôle continu** — Pandas, exploration & régression linéaire | [Analyse du taux EUR/USD](seance-05/README.md) |
 
 ## Rendu des exercices
 
